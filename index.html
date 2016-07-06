@@ -7,18 +7,27 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>One Million Lines</title>
+    <title>Blog Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link href="fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="js/ie-emulation-modes-warning.js"></script> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,9 +36,9 @@
     <![endif]-->
   </head>
 
-  <body data-spy="scroll" data-target="#navbar" data-offset="60">
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,130 +47,168 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#jumbotron"><img src="images/top_logo.png" alt="One Million Lines" title="One Million Lines"></a>
+          <a class="navbar-brand" href="#"><strong>Shizzy </strong>Space</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#who-we-are">Who We Are</a></li>
-            <li><a href="#get-involved">Get Involved</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Blog<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Fixed top</a></li>
+            <li><a href="#">Fourth</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div id="jumbotron" class="jumbotron">
-      <div class="container">
-        <h1>Our goal is to inspire <br>Tallahassee to write 1,000,000<br> lines of code_</h1>
-        <p>All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by <strong>CODE.org</strong>. Millions of lines of code are being written. In the capital of Florida, Tallahassee, the community is taking the challenge and our goal is to write 1,000,000 lines of code_</p>
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form action="//github.us13.list-manage.com/subscribe/post?u=93c1d7e181930a39424bb125e&amp;id=87e3d853ac" method="post" id="mc-embedded-subscribe-form" 
-          name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="row">
-              <div id="mc_embed_signup_scroll">
-                <div class="col-sm-9">
-                  <div class="mc-field-group form-group">
-                      <input id="email" type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter Email">
+    <div id="blog-page">
+        <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title"><a href="blog-post">Sample blog post</a></h2>
+                <p class="blog-post-meta"><a type="button" class="btn btn-danger btn-sm" href="#">55 Comments</a> January 1, 2014 by <a href="#">Mark</a></p>
+
+                <img src="images/udemy-banner.png">
+
+                <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                <hr>
+                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                <blockquote>
+                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </blockquote>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <h2>Heading</h2>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <h3>Sub-heading</h3>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <pre><code>Example code block</code></pre>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+                <h3>Sub-heading</h3>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+                </ul>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+                <ol>
+                <li>Vestibulum id ligula porta felis euismod semper.</li>
+                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                </ol>
+                <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. <a href="blog-post">...Read More</a></p>
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Another blog post</h2>
+                <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                <blockquote>
+                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </blockquote>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.<a href="blog-post">...Read More</a></p>
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">New feature</h2>
+                <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+                </ul>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.<a href="blog-post">...Read More</a></p>
+            </div><!-- /.blog-post -->
+
+            <nav>
+                <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+                </ul>
+            </nav>
+
+            </div><!-- /.blog-main -->
+
+            <div class="col-sm-4 blog-sidebar">
+              <div id="subscribe-box" class="sidebar-module sidebar-module-inset">
+                  <h4><b>Like what your reading?</b></h4>
+                  <p>Join today to recieve free updates, free learning resources, and other awesome stuff.  No spam!</p>
+                  <!-- Begin MailChimp Signup Form -->
+                  <div id="mc_embed_signup">
+                    <form action="http://github.us13.list-manage.com/subscribe/post?u=93c1d7e181930a39424bb125e&amp;id=262638022f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Email">
+                          </div>
+                        </div>
+                        <div id="mce-responses" class="clear">
+                          <div class="response" id="mce-error-response" style="display:none"></div>
+                          <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_93c1d7e181930a39424bb125e_262638022f" tabindex="-1" value=""></div>
+                        <p class="center"><input type="submit" name="subscribe" value="Join Now!" id="mc-embedded-subscribe" class="btn btn-warning" id="mc-embedded-subscribe"></p>
+                        </div>
+                    </form>
                   </div>
-                </div>
-                <div class="col-sm-3">
-                  <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_93c1d7e181930a39424bb125e_87e3d853ac" tabindex="-1" value=""></div>
-                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-lg"></div>
+                  <!--End mc_embed_signup-->
                 </div>
               </div>
-            </div>
-          </form>
-        </div>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-    <!--End mc_embed_signup-->
-        <p><a class="btn btn-danger btn-lg" role="button" data-toggle="modal" data-target="#myModal">Learn more &raquo;</a></p>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <!-- MODAL -->
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/eDxQ4og5gHg?showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        <!-- END MODAL -->
+              <div class="sidebar-module">
+                  <h4>Archives</h4>
+                  <ol class="list-unstyled">
+                  <li><a href="#">March 2014</a></li>
+                  <li><a href="#">February 2014</a></li>
+                  <li><a href="#">January 2014</a></li>
+                  <li><a href="#">December 2013</a></li>
+                  <li><a href="#">November 2013</a></li>
+                  <li><a href="#">October 2013</a></li>
+                  <li><a href="#">September 2013</a></li>
+                  <li><a href="#">August 2013</a></li>
+                  <li><a href="#">July 2013</a></li>
+                  <li><a href="#">June 2013</a></li>
+                  <li><a href="#">May 2013</a></li>
+                  <li><a href="#">April 2013</a></li>
+                  </ol>
+              </div>
+              <div class="sidebar-module">
+                  <h4>Elsewhere</h4>
+                  <ol class="list-unstyled">
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  </ol>
+              </div>
+            </div><!-- /.blog-sidebar -->
 
-        </div>
-      </div>
-        
-        <image src="images/code.png" title="Code.org logo" alt="Code.org">
-      </div>
-    </div>
+        </div><!-- /.row -->
 
-    <div id="who-we-are">
-      <div class="container homepage">
-        <img src="images/academy_brand_med.png" alt="Massive Academy" title="Massive Academy">
-          <h2>Who We Are</h2>
-          <hr>
-          <p>We are <a href="#">MASSIVE Academy</a>. We aim to improve education through both method - effective project-based learning - and material - by teaching skills that are applicable to improving your life today.</p>
-      </div>
-    </div>
+        </div><!-- /.container -->
+    </div><!-- /#blog-page -->
 
-    <div id="get-involved">
-      <div class="container homepage">
-        <h2>Get Involved</h2>
-        <hr>
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3>Students</h3>
-            <p>Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll let you know how to get involved.</p>
-            <p><a class="btn btn-default" href="http://goo.gl/forms/UtjvmgwCSjjT7eak2" target="_blank" role="button">Start Learning &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3>Educators</h3>
-            <p>Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen.</p>
-            <p><a class="btn btn-default" href="#" role="button">Join The Initiative &raquo;</a></p>
-        </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-money fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3>Sponsors</h3>
-            <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding. Click to get involved.</p>
-            <p><a class="btn btn-default" href="#" role="button">Give Support &raquo;</a></p>
-          </div>
-        </div>
-      </div> <!-- /container -->
-
-      <hr>
-
-      <footer>
-        <div class="container">
-          <img src="images/one_million_bottom_brand.png" title="One Million Lines" alt="One Million Lines">
-        </div>
-        <div id="back-to-top">
-        <a href="#jumbotron"><i class="fa fa-chevron-circle-up fa-2x"></i></a>
-      </div>
-      </footer>
-
-    </div>
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
 </html>
