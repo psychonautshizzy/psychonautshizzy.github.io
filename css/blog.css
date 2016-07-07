@@ -5,7 +5,7 @@
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #555;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
 h1, .h1,
@@ -55,7 +55,7 @@ h2 {
 }
 
 .navbar-default .navbar-nav>li>a{
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:hover{
@@ -108,12 +108,41 @@ h2 {
   padding: 15px;
   background-color: #f5f5f5;
   border-radius: 4px;
-  border: dashed 2px #2ecc71;
+  border: dashed 2px #e74c3c;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
   margin-bottom: 0;
+}
+.sidebar-list{
+  border: 2px solid #efefef;
+  padding: 0;
+}
+.sidebar-list h4 {
+  font-family: "Open Sans", serif;
+  text-align: center;
+  background-color: #efefef;
+  padding: 8px 0;
+  text-transform: uppercase;
+  font-weight:700;
+  letter-spacing: 4px;
+}
+.sidebar-list li {
+  border-bottom: 2px solid #efefef;
+  padding: 10px 0 0 10px;
+  min-height: 60px;
+  line-height: 1.6em;
+  font-size: 16px;
+}
+.sidebar-list li:last-child {
+  border-bottom: 0;
+}
+.sidebar-list a {
+  color: #555;
+}
+.sidebar-list a:hover {
+  color: #111;
 }
 
 #subscribe-box {
@@ -134,7 +163,7 @@ h2 {
     margin-top: 15px;
 }
 
-p.center {
+.center {
     text-align: center;
 }
 
@@ -176,18 +205,18 @@ p.center {
   font-weight: 700;
 }
 .blog-post-title a{
-    color: #555;
+  color: #555;
 }
 .blog-post-title a:hover{
-    text-decoration: none;
+  text-decoration: none;
 }
 .blog-post-meta {
   margin-bottom: 20px;
-    color: #888;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 18px;
+  color: #888;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .blog-sidebar {
@@ -195,12 +224,25 @@ p.center {
 }
 
 .blog-post-meta .btn-danger {
-    background-color: #e74c3c;
-    padding: 3px 8px;
-    margin-right: 12px;
-    text-transform: uppercase;
-    font-weight: 300;
+  background-color: #e74c3c;
+  padding: 3px 8px;
+  margin-right: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
+
+
+
+/* Blog Post Page */
+#share-buttons img {
+  width: 45px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+  vertical-align: middle;
+}
+
 
 
 /*
