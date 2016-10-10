@@ -1,0 +1,138 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 60px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar {
+  margin-bottom: -51px;
+}
+
+.navbar-inverse{
+  opacity: .8;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.header, .gallery {
+  background-position: center;
+  background-size: initial;
+  margin-bottom: 30px;
+}
+
+.header {
+  height: 424px;
+  background-image: url("../images/landing_image.jpg");
+}
+
+.gallery, .about, .content {
+  height: 236px;
+  margin-bottom: 50px;
+  /*background-image: url("../images/gallery1.jpg");*/
+}
+
+.image-gallery{
+  padding-bottom: 20px;
+  background-color: rgba(190,190,190,.15);
+}
+
+.header h1, .gallery h1, .about h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 80px;
+  margin-top: 112px;
+  padding: 5px;
+  background-color: rgba(256, 256, 256, .2);
+  font-family: 'Ewert', cursive;
+  letter-spacing: 5px;
+}
+
+.main_images img {
+  height: 256px;
+}
+.modal {
+  height: 100%;
+}
+
+.modal img {
+  height: 90%;
+  padding: 1%;
+}
+
+#carousel-gallery, #carousel-gallery2 {
+  display: table;
+  margin: 0 auto;
+}
+
+
+.item img {
+  display: table;
+  margin: auto auto;
+}
+
+.blurb {
+  margin: 20px;
+}
+
+.blurb p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.profile img {
+  display: table;
+  margin: auto auto;
+  width: 98%;
+  border-radius: 150px;
+}
+
+.profile p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.grid-item {
+  width: 25%;
+  padding: 1%;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+.contact-info {
+  width: 66.666%;
+  margin: 0 auto;
+}
+
+.contact-info h1 {
+  margin-bottom: 30px;
+}
+
+/*iframe {
+  display:block;
+  margin: 0 auto;
+}*/
